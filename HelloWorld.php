@@ -1,14 +1,13 @@
 <?php
 
-$tekst="Hello,World!\n";
-$tekst2="De wereld is van mij!\n";
+$teller=1;
+$maximum=10;
+$tekst = "Hello,World!\n";
 
-echo ($tekst);
-echo ($tekst);
-echo ($tekst);
-echo ($tekst);
-echo ($tekst);
+While ($teller <= $maximum) {
+    echo $tekst;
 
-echo ($tekst2);
+    $teller++;
+}
 
 ?>
