@@ -14,7 +14,7 @@ if ($tafel == "je moeder") {
     exit("Naomi is een lieverd!");
 } else if ($tafel == "kars") {
     exit("karsie parsie is een snarsie");
-    } else if ($tafel == "ballon") {
+} else if ($tafel == "ballon") {
     exit ("up up it goes");
 }
 
