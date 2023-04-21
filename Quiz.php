@@ -1,5 +1,7 @@
 <?php
 
+echo "\e[H\e[J";
+
 $random = rand(1,100);
 
 echo "Type 'stop' om te stoppen\n";
