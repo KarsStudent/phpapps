@@ -18,8 +18,14 @@ if ($invoer == "stop") {
 }
 
 while ($invoer != $random) {
-    if ($invoer != (int) $invoer) {
+    if (strlen($invoer) > 3) {
+        echo "Te veel karakters!\n";
+        echo "\n";
+    } else if ($invoer != (int) $invoer) {
         echo "Alleen getallen!\n";
+        echo "\n";
+    } else if ($invoer > 100 || $invoer < 1) {
+        echo "Alleen getallen tussen de 1 en 100!\n";
         echo "\n";
     } else if ($invoer < $random) {
         echo "Het getal is groter dan $invoer\n";
