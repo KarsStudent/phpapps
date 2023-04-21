@@ -1,7 +1,7 @@
 <?php
 
-$getal1=200;
-$getal2=100;
+$getal1 = readline("Eerste getal: ");
+$getal2 = readline("Tweede getal: ");
 
 $som=$getal1 + $getal2;
 echo "$getal1 + $getal2 = ".$som;
