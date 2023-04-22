@@ -19,7 +19,7 @@ if ($invoer == "stop") {
 
 while ($invoer != $random) {
     if (strlen($invoer) > 3) {
-        echo "Te veel karakters!\n";
+        echo "Maximaal 3 karakters!\n";
         echo "\n";
     } else if ($invoer != (int) $invoer) {
         echo "Alleen getallen!\n";
