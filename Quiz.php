@@ -1,6 +1,6 @@
 <?php
 
-//clear terminal
+//clear terminal met ASCII code
 echo "\e[H\e[J";
 
 //genereert random getal tussen 1, 100
