@@ -8,6 +8,7 @@ $allAntwoord = array();
 for ($index = 0; $index <= 5; $index++) {
     $random = rand(1, 42);
     
+    //Check of random getal al bestaat.
     if (in_array($random, $allAntwoord)) {
             $index--;
     } else {
@@ -25,11 +26,15 @@ $allInvoer = array();
 for ($index = 1; $index <= 6; $index++) {
     $invoer = readline("Voer getal $index in: ");
 
-    //Check of invoer == tussen 1 en 42.
+    //Check of invoer == tussen 1 en 42 en of het getal al gekozen is.
     if ($invoer > 42 || $invoer < 1) {
         echo "Alleen getallen tussen de 1 en 42!\n";
         $index--;
-    } else {
+    } else if (in_array($invoer, $allInvoer)) {
+        echo "Dat getal heb je al gekozen!\n";
+        $index--;
+    } 
+    else {
         array_push($allInvoer, $invoer);
     }
 }
