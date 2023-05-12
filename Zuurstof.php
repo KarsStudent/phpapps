@@ -17,7 +17,7 @@ if ($m > 60) {
     $hours = floor($m / 60);  
     $minutes = $m % 60;
     
-    echo "$hours uur en $minutes minuten. :)";
+    echo "$hours uur en $minutes minuten 😊";
 }
 
 ?>
