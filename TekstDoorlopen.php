@@ -2,19 +2,15 @@
 
 echo "\e[H\e[J";
 
-$input = readline("Input: ");
-$aantalSpaties = 0;
-$aantalZinnen = 0;
-$aantalKlinkers = 0;
-$aantalMedeklinkers = 0;
-$aantalLeestekens = 0;
+$input = false;
+$aantalSpaties = $aantalZinnen = $aantalKlinkers = $aantalMedeklinkers = $aantalLeestekens = 0;
 
 $klinkers = array("a", "e", "u", "o", "i", "A", "E", "U", "O", "I");
 $zinDefiner = array(".", "!", "?");
 $leestekens = array(".", ",", "!", "?", ":", ";");
 
-while (strlen($input) > 250) {
-    $input = readline("Input: ");
+while (strlen($input) > 250 || $input == "" || (int)$input) {
+    $input = readline("Invoer: ");
 }
 
 for ($i = 0; $i < strlen($input); $i++) {
