@@ -8,19 +8,22 @@ $invoer = readline("Put your character or integer: ");
 echo "\n";
 
 while($invoer != "stop") {
-if ($invoer == (int) $invoer) {
+    for ($i = 0; $i < strlen($invoer); $i++) {
+        if ($invoer == (int) $invoer) {
+            $character = $invoer[$i];
 
-$ascii = chr($invoer);
-echo "Character: $ascii\n";
-echo "\n";
-
-} elseif ($invoer != (int) $invoer) {
-
-    $char = ord($invoer);
-    echo ("Ascii: $char\n");
-    echo "\n";
-
-}
+            $ascii = chr($character);
+            echo "Character: $ascii\n";
+            echo "\n";
+        
+            } elseif ($invoer != (int) $invoer) {
+        
+                $char = ord($character);
+                echo ("Ascii: $char\n");
+                echo "\n";
+        
+            }
+    }
 
 $invoer = readline("Put your character or integer: ");
 echo "\n";
